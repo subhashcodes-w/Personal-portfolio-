@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Subhash Babu portfolio website with projects, skills, certificates, resume view, and contact section." />
+  <title>Subhash Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="bg-blur bg1"></div>
+  <div class="bg-blur bg2"></div>
+
+  <header class="header">
+    <div class="logo-wrap">
+      <div class="logo">D</div>
+      <div>
+        <h1 class="site-name">Subhash Babu</h1>
+        <p>Web Developer</p>
+      </div>
+    </div>
+
+    <nav class="navbar" id="navbar" aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button
+      class="menu-btn"
+      id="menuBtn"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="navbar"
+      type="button"
+    >
+      ☰
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="tag">Software Engineering Student</p>
+        <h2>Hi, I’m <span>Subhash</span></h2>
+        <p class="hero-text">
+          I build modern, responsive, and user-friendly websites using HTML, CSS, and JavaScript.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Profile</h3>
+        <p>Frontend Developer</p>
+        <p>Location: Morādābād, Uttar Pradesh</p>
+        <p>Focus: Clean UI + Responsive Design</p>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-head">
+        <p>About Me</p>
+        <h2>Introduction</h2>
+      </div>
+      <div class="about-box">
+        <p>
+          I am passionate about web development and love creating attractive websites with smooth layouts,
+          useful features, and professional presentation.
+        </p>
+      </div>
+    </section>
+
+    <section class="resume section" id="resume">
+      <div class="section-head">
+        <p>Resume</p>
+        <h2>View Resume</h2>
+      </div>
+
+      <div class="upload-grid">
+        <div class="upload-card full-width">
+          <h3>Resume File</h3>
+          <p>Click the button below to view or open the resume file.</p>
+          <a class="upload-btn" href="resume.pdf" target="_blank" rel="noopener noreferrer">
+            View Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="section-head">
+        <p>Skills</p>
+        <h2>Knowledge Level</h2>
+      </div>
+
+      <div class="skill-list">
+        <div class="skill-item">
+          <div class="skill-top"><span>HTML</span><span>90%</span></div>
+          <div class="bar"><div class="fill html"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-top"><span>CSS</span><span>85%</span></div>
+          <div class="bar"><div class="fill css"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-top"><span>JavaScript</span><span>75%</span></div>
+          <div class="bar"><div class="fill js"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-top"><span>Responsive Design</span><span>80%</span></div>
+          <div class="bar"><div class="fill responsive"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="certificates section" id="certificates">
+      <div class="section-head">
+        <p>Certificates</p>
+        <h2>View Certificate</h2>
+      </div>
+
+      <div class="upload-grid">
+        <div class="upload-card">
+          <h3>Certificate File</h3>
+          <p>Click the button below to view the certificate file.</p>
+          <a class="upload-btn" href="certificate.pdf" target="_blank" rel="noopener noreferrer">
+            View Certificate
+          </a>
+        </div>
+
+        <div class="upload-card">
+          <h3>Available File</h3>
+          <div class="file-list">
+            <span>certificate.pdf</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="section-head">
+        <p>Projects</p>
+        <h2>Featured Work</h2>
+      </div>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Calculator App</h3>
+          <div class="calculator">
+            <input type="text" id="calcDisplay" readonly placeholder="0" aria-label="Calculator display" />
+            <div class="calc-buttons">
+              <button type="button" onclick="appendCalc('7')">7</button>
+              <button type="button" onclick="appendCalc('8')">8</button>
+              <button type="button" onclick="appendCalc('9')">9</button>
+              <button type="button" class="op" onclick="appendCalc('/')">/</button>
+
+              <button type="button" onclick="appendCalc('4')">4</button>
+              <button type="button" onclick="appendCalc('5')">5</button>
+              <button type="button" onclick="appendCalc('6')">6</button>
+              <button type="button" class="op" onclick="appendCalc('*')">×</button>
+
+              <button type="button" onclick="appendCalc('1')">1</button>
+              <button type="button" onclick="appendCalc('2')">2</button>
+              <button type="button" onclick="appendCalc('3')">3</button>
+              <button type="button" class="op" onclick="appendCalc('-')">-</button>
+
+              <button type="button" onclick="appendCalc('0')">0</button>
+              <button type="button" onclick="appendCalc('.')">.</button>
+              <button type="button" class="equal" onclick="calculateCalc()">=</button>
+              <button type="button" class="op" onclick="appendCalc('+')">+</button>
+
+              <button type="button" class="clear" onclick="clearCalc()">C</button>
+              <button type="button" class="del" onclick="deleteCalc()">Del</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>To-Do List App</h3>
+          <div class="todo">
+            <div class="todo-form">
+              <input type="text" id="todoInput" placeholder="Add a task..." />
+              <button type="button" id="addTodoBtn">Add</button>
+            </div>
+            <ul id="todoList" class="todo-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-head">
+        <p>Contact</p>
+        <h2>Get In Touch</h2>
+      </div>
+
+      <div class="contact-box">
+        <p>Email: Subhashgangwar668@gmail.com</p>
+        <p>Contact No: +91 8445528481</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Subhash Gangwar. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
