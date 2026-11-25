@@ -251,46 +251,33 @@ main {
   line-height: 1.8;
 }
 
-.skill-list {
-  display: grid;
-  gap: 18px;
+/* Technologies Used */
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
   max-width: 820px;
   margin: 0 auto;
 }
 
-.skill-item {
+.tech-chip {
+  padding: 12px 24px;
+  border-radius: 999px;
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 18px;
-  padding: 18px;
-}
-
-.skill-top {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
   color: #dfe9fb;
   font-weight: 600;
+  font-size: 0.98rem;
+  transition: 0.25s;
 }
 
-.bar {
-  height: 12px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.08);
-  overflow: hidden;
+.tech-chip:hover {
+  color: #38bdf8;
+  border-color: rgba(56, 189, 248, 0.4);
+  transform: translateY(-2px);
 }
-
-.fill {
-  height: 100%;
-  width: 0;
-  border-radius: inherit;
-  transition: width 1.4s ease;
-}
-
-.fill.html { background: linear-gradient(90deg, #38bdf8, #0ea5e9); }
-.fill.css { background: linear-gradient(90deg, #a78bfa, #8b5cf6); }
-.fill.js { background: linear-gradient(90deg, #facc15, #f59e0b); }
-.fill.responsive { background: linear-gradient(90deg, #34d399, #10b981); }
 
 .calculator {
   margin-top: 16px;
@@ -453,4 +440,11 @@ main {
   .todo-form {
     flex-direction: column;
   }
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }
